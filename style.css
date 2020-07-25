@@ -62,8 +62,9 @@ img{
 .card h3{
   margin-bottom: 2rem;
 }
-.card img{
-  height: 400px;
+.card iframe{
+  height: 500px;
+  width: 100%;
 }
 
 .card > div {
@@ -135,3 +136,4 @@ img{
   background: #FDB;
   cursor: move;
 }
+

@@ -7,14 +7,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Evan Wagner">
     <meta name="linkedin" content="https://www.linkedin.com/in/evan-wagner-1b92201b3/">
-    <title>The Death Star</title>
+    <title>The Life of Evan</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <style>
+    body{
+       min-height: 100vh;
+       width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: black;
+    }
+
+
+#game-board {
+    background-color: #cccccc;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+    }
+
+.snake{
+    max-width: 50%;
+    max-height: 100%;
+    background-color: #C14242;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 0;
+    grid-area: auto;
+    
+}
+.food{
+    background-color: hsl(50, 100%, 50%);
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+    max-width: 50%;
+    border-radius: 50%;
+    
+}
+
+
+    </style>
 </head>
 <body>
+    <script src="game.js" defer type="module"></script>
+    
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
@@ -33,16 +79,10 @@
         </div>
     
     <header class="showcase">
-        <div class="container showcase-inner">
-            <h1><span>Welcome</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint vero temporibus consequatur. Autem architecto recusandae officia? Iusto ullam tempore tempora!</p>
-            <section class="card">
-                <img src="" alt="">
-                <div>
-                  <h3></h3>  
-                </div>
-            </section>
-        </div>
+       
     </header>
+    <div id="game-board"></div>
+
+    
 </body>
 </html>
