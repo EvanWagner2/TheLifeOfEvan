@@ -175,3 +175,33 @@ img{
   height: 200px;
   width: 200px;
 }
+
+.contact{
+  margin: 100px;
+  color: black;
+ 
+}
+
+.contact h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+  background-color: saddlebrown;
+}
+
+.contact div label{
+  font-size: 20;
+  margin-left: 10px;
+}
+.contact div{
+  background-color: #f1f1f1;
+}
+
+.contact div textarea{
+ margin-left: 10px;
+}
+
+.contact button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
