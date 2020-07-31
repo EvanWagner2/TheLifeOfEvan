@@ -30,6 +30,7 @@ body {
   text-align: center;
   padding: 2rem;
   
+  
 }
 
 .main-header h1 {
@@ -39,7 +40,11 @@ body {
 }
 
 .main-header h1 span {
-  color: #5e0017
+  color: #5e0017;
+  perspective-origin: 50% 50%;
+  background-color: darkgray;
+  perspective: 1000px;
+  
 }
 
 .main-header p {
@@ -80,7 +85,34 @@ img{
   position: relative;
 }
 
-.showcase:before{
+/*.showcase::after{
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-color: darkgray;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+ background-size: cover;
+}
+*/
+.overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(233, 64, 64, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+/* .showcase:before{
   content:'';
   background: url('../img/showcase.jpg') no-repeat center center/cover;
   position: absolute;
@@ -88,9 +120,10 @@ img{
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 
 }
+*/ 
 
 .showcase .showcase-inner{
   display: flex;

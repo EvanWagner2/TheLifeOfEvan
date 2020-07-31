@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
     body{
-       min-height: 100vh;
+       height: 100vh;
        width: 100vw;
         display: flex;
         justify-content: center;
@@ -25,40 +26,34 @@
     }
 
 
-#game-board {
-    background-color: #cccccc;
-    min-height: 100vh;
-    width: 100%;
+    #game-board {
+    background-color: black;
+    height: 100vmin;
+    width: 100vmin;
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
+    border: .25vmin solid white;
     }
 
 .snake{
-    max-width: 50%;
-    max-height: 100%;
-    background-color: #C14242;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    padding: 0;
-    grid-area: auto;
     
+    background-color: white;
+    border: .25vmin dashed grey;
+    border-radius: 25%;
+
 }
 .food{
-    background-color: hsl(50, 100%, 50%);
-    border-style: dashed;
-    border-color: black;
-    border-width: 1px;
-    max-width: 50%;
-    border-radius: 50%;
-    
+    background-color: hsl(54, 99%, 49%);
+    border: .25vmin dashed red;
+    border-radius: 30%;
 }
 
 
     </style>
 </head>
 <body>
+    <div class="overlay" onclick="off()"></div>
     <script src="game.js" defer type="module"></script>
     
     <div class="menu-wrap">
@@ -78,11 +73,34 @@
         </div>
         </div>
     
+    </div>
     <header class="showcase">
-       
+       <div class="content">
+           <img src="logo.png" class="logo">
+           <div class="title">
+               Welcome to my website! Please, play a game.
+           </div>
+           <div class="text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, expedita?
+           </div>
+       </div>
     </header>
+        <section class="services">
+            <div class="container grid-3">
+                <div>
+            
+                </div>
+            </div>
+        </section>
     <div id="game-board"></div>
+        <script>
+            function on(){
+                document.getElementById("overlay").style.display = "block";
+            }
 
-    
+            function off(){
+                document.getElementById("overlay").style.display = "none";
+            }
+        </script>
 </body>
 </html>
