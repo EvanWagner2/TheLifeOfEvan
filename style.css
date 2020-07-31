@@ -96,7 +96,7 @@ img{
  background-size: cover;
 }
 */
-.overlay{
+.ovay{
   position: fixed;
   display: none;
   width: 100%;
@@ -170,3 +170,8 @@ img{
   cursor: move;
 }
 
+
+.logo{
+  height: 200px;
+  width: 200px;
+}
