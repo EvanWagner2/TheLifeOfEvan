@@ -7,7 +7,7 @@ const gameBoard = document.getElementById('game-board')
 
 function main(currentTime){
     if(gameOver){
-       if(confirm('You lost! while you are here, why dont you check out my portfolio')){
+       if(confirm('You lost!                   While you are here, why dont you check out my portfolio')){
            window.location = './portfolio.html'
        }
        return
