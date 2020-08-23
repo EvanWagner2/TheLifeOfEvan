@@ -1,6 +1,7 @@
 :root {
-  --primary-color: rgba(219, 0, 0, 0.75);
-  --overlay-color: rgba(24,40,50, 0.9);
+  --primary-color: rgba(31, 19, 83, 0.85);
+  --overlay-color: rgba(158, 0, 197, 0.7);
+  --button-color: rgba(243, 29, 29, 0.8);
   --menu-speed: 0.7s;
 }
 
@@ -20,7 +21,7 @@ body {
    justify-content: center;
    align-items: center;
    margin: 0;
-   background-color: var(--overlay-color);
+   background-color: var(--primary-color);
 }
 .container {
   max-width: 960px;;
@@ -36,12 +37,14 @@ body {
   align-items: center;
   text-align: center;
   padding: 2rem;
+  font-size: auto;
+
   
   
 }
 
 .main-header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   line-height: 1.2;
 }
@@ -49,8 +52,10 @@ body {
 .main-header h1 span {
   color: #5e0017;
   perspective-origin: 50% 50%;
-  background-color: darkgray;
-  perspective: 1000px;
+  background-color:rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  text-align: center;
+ 
   
 }
 
@@ -192,13 +197,14 @@ img{
   margin: 100px;
   color: black;
  
+ 
 }
 
 .contact h3 {
   font-family: 'Crimson Text', serif;
   font-size: 30px;
   padding-bottom: 20px;
-  background-color: saddlebrown;
+  background-color: rgb(9, 199, 174);
 }
 
 .contact div label{
@@ -207,10 +213,12 @@ img{
 }
 .contact div{
   background-color: #f1f1f1;
+  border-radius: 20px;
 }
 
 .contact div textarea{
  margin-left: 10px;
+ border-radius: 50px;
 }
 
 .contact button {
@@ -223,7 +231,7 @@ img{
 #game-board {
   background-color: black;
   height: 100vmin;
-  width: 100vmin;
+  width: 200vmin;
   display: grid;
   grid-template-rows: repeat(21, 1fr);
   grid-template-columns: repeat(21, 1fr);
@@ -257,4 +265,156 @@ img{
   text-align: center;
   font-family: 'Lemonada', cursive;
   font-size: 20px;
+}
+
+a.hideDisplay{
+  position: relative;
+  z-index: 20;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+a.hideDisplay:hover{
+  z-index: 30;
+}
+
+a.hideDisplay span.showDisplayOnHover{
+  display: none;
+}
+
+a.hideDisplay:hover span.showDisplayOnHover{
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  line-height: 10px;
+  top: 5px;
+  left: 20px;
+
+  width: auto;
+  padding: 10px;
+  border: 1px solid #5e0017;
+  background-color: #111111;
+  color: #f1f1f1f1;
+  text-align: left;
+
+}
+
+.content{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  display: list-item;
+  background-color: #ffd000;
+  border-radius: 10px;
+}
+.timeline{
+  display: list-item;
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+  
+}
+
+.timeline h3{
+  font-family: 'Crimson Text', serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  
+}
+.timeline h4{
+  font-size: 24px;
+  font-family: 'Maven Pro', sans-serif;
+}
+.timeline h4 span{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 24px;
+}
+.timeline p{
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 800px;
+  font-family: 'Source Serif Pro', serif;
+}
+
+
+.timeline ul{
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li{
+  list-style: none;
+  position: relative;
+  width: 50%; 
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.timeline:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #e6d600 ;
+}
+
+
+.timeline ul li:nth-child(odd){
+  float: left;
+  text-align:  right;
+  clear: both;
+}
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(233, 33,99. 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33,99. 0.2);
+}
+.timeline ul li:nth-child(even){
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgba(233, 33,99. 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33,99. 0.2);
+}
+
+.timeline ul li:nth-child(odd) .time{
+  position: absolute;
+  top: 12px;
+  right: -260px;
+  margin: 0;
+  padding: 9px 16px;
+  background: var(--button-color);
+  border-radius: 20px;
+  box-shadow: 0 0 0 3px rgba(233, 91, 252, 0.8);
+}
+.timeline ul li:nth-child(even) .time{
+  position: absolute;
+  top: 12px;
+  left: -260px;
+  margin: 0;
+  padding: 9px 16px;
+  background: var(--button-color);
+  border-radius: 20px;
+  box-shadow: 0 0 0 3px rgba(233, 91, 252, 0.8);
 }

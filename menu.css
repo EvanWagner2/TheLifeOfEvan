@@ -37,6 +37,7 @@
     width: 100%;
     height: 2px;
     background-color: #fff;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,6 +100,7 @@
 }
 .menu-wrap .menu > div{
     background: var(--overlay-color);
+   
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
@@ -120,8 +122,10 @@
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-family: 'Schoolbell', cursive;
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: 900;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
