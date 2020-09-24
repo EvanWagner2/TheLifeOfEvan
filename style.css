@@ -264,7 +264,7 @@ img{
   padding-left: 100px;
   text-align: center;
   font-family: 'Lemonada', cursive;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 a.hideDisplay{
@@ -302,16 +302,42 @@ a.hideDisplay:hover span.showDisplayOnHover{
 
 .content{
   padding-left: 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
+  align-content: left;
   display: list-item;
   background-color: #ffd000;
-  border-radius: 10px;
+  border-radius: 20%;
+}
+.content-map{
+  padding-left: 20px;
+  padding-top: -120px;
+  
+  padding-bottom: 20px;
+  align-content: left;
+  display: list-item;
+  background-color: #ffd000;
+  border-radius: 20%;
+}
+.story{
+  align-content: center;
+  margin-top: -30px;
+  padding-top: 20px;
+  
+}
+.content .title{
+  align-content: center;
+  padding-right: 70px;
+}
+.content .arrows{
+  align-content: center;
+  
 }
 .timeline{
   display: list-item;
   position: relative;
-  margin: 50px auto;
-  padding: 40px 0;
+  margin: 10px auto;
+  padding: 90px 0;
   width: 1000px;
   box-sizing: border-box;
   
@@ -351,7 +377,8 @@ a.hideDisplay:hover span.showDisplayOnHover{
   list-style: none;
   position: relative;
   width: 50%; 
-  padding: 20px 40px;
+  margin-top: -70px;
+  padding: 20px 30px;
   box-sizing: border-box;
 }
 .timeline:before{
@@ -417,4 +444,11 @@ a.hideDisplay:hover span.showDisplayOnHover{
   background: var(--button-color);
   border-radius: 20px;
   box-shadow: 0 0 0 3px rgba(233, 91, 252, 0.8);
+}
+.center{
+  text-align: center;
+  margin: auto;
+  top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
