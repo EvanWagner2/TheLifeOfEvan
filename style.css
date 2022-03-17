@@ -1,6 +1,6 @@
 :root {
-	--primary-color: rgba(31, 19, 83, 0.85);
-	--overlay-color: rgba(158, 0, 197, 0.7);
+	--primary-color: rgba(122, 136, 173, 0.85);
+	--overlay-color: rgba(0, 0, 0, 0.7);
 	--button-color: rgba(243, 29, 29, 0.8);
 	--menu-speed: 0.7s;
 }
@@ -12,7 +12,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	line-height: 1.3rem;
 	height: 100vh;
 	width: 100vw;
@@ -186,7 +186,7 @@ img {
 }
 
 .contact h3 {
-	font-family: 'Crimson Text', serif;
+	font-family: "Crimson Text", serif;
 	font-size: 30px;
 	padding-bottom: 20px;
 	background-color: rgb(9, 199, 174);
@@ -244,7 +244,7 @@ img {
 .welcome {
 	padding-left: 100px;
 	text-align: center;
-	font-family: 'Lemonada', cursive;
+	font-family: "Lemonada", cursive;
 	font-size: 22px;
 }
 
@@ -326,7 +326,7 @@ a.hideDisplay:hover span.showDisplayOnHover {
 }
 
 .timeline h3 {
-	font-family: 'Crimson Text', serif;
+	font-family: "Crimson Text", serif;
 	font-size: 40px;
 	margin: 0;
 	padding: 0;
@@ -334,10 +334,10 @@ a.hideDisplay:hover span.showDisplayOnHover {
 }
 .timeline h4 {
 	font-size: 24px;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: "Maven Pro", sans-serif;
 }
 .timeline h4 span {
-	font-family: 'Maven Pro', sans-serif;
+	font-family: "Maven Pro", sans-serif;
 	font-size: 24px;
 }
 .timeline p {
@@ -345,7 +345,7 @@ a.hideDisplay:hover span.showDisplayOnHover {
 	padding: 0;
 	font-size: 18px;
 	font-weight: 800px;
-	font-family: 'Source Serif Pro', serif;
+	font-family: "Source Serif Pro", serif;
 }
 
 .timeline ul {
@@ -364,7 +364,7 @@ a.hideDisplay:hover span.showDisplayOnHover {
 	box-sizing: border-box;
 }
 .timeline:before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 50%;
 	width: 2px;
@@ -378,7 +378,7 @@ a.hideDisplay:hover span.showDisplayOnHover {
 	clear: both;
 }
 .timeline ul li:nth-child(odd):before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 24px;
 	right: -6px;
@@ -395,7 +395,7 @@ a.hideDisplay:hover span.showDisplayOnHover {
 }
 
 .timeline ul li:nth-child(even):before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 24px;
 	left: -4px;
@@ -467,7 +467,7 @@ a.hideDisplay:hover span.showDisplayOnHover {
 	}
 }
 #progressbar:before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -477,7 +477,7 @@ a.hideDisplay:hover span.showDisplayOnHover {
 	filter: blur(30px);
 }
 #progressbar:after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
