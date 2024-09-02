@@ -1,5 +1,5 @@
 :root {
-	--primary-color: rgba(122, 136, 173, 0.85);
+	--primary-color: rgba(95, 78, 1, 0.85);
 	--overlay-color: rgba(0, 0, 0, 0.7);
 	--button-color: rgba(243, 29, 29, 0.8);
 	--menu-speed: 0.7s;
@@ -20,7 +20,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: 0;
-	background-color: var(--primary-color);
+	background-image: (woodbg.jpeg);
 }
 .container {
 	max-width: 960px;
